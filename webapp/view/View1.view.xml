@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.deloitte.listreport.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List noDataText="Drop list items here" id="list0" items="{path:'/EmpDetailSet',parameters:{select:'EMPID,EMPNAME,EMPCITY,DEPARTMENT,SKILL'}}">
+                <items>
+                    <StandardListItem type="Navigation" title="{EMPID}" description="{EMPNAME}" icon="sap-icon://picture" id="item0"/>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
